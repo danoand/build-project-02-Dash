@@ -14,6 +14,7 @@ navbar = dbc.NavbarSimple(
     brand='NC Vehicle-Pedestrian Crashes',
     brand_href='/', 
     children=[
+        dbc.NavItem(dcc.Link('Home', href='/', className='nav-link')), 
         dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
         dbc.NavItem(dcc.Link('Insights', href='/insights', className='nav-link')), 
         dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 

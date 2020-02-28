@@ -11,12 +11,11 @@ from app import app
 
 # 2 column layout. 1st column width = 4/12
 # https://dash-bootstrap-components.opensource.faculty.ai/l/components/layout
+column0 = dbc.Col([dcc.Markdown("## Give Em a Brake!\n#### Understanding Pedestrian Outcomes in Vehicular Crashes")])
 column1 = dbc.Col(
     [
         dcc.Markdown(
             """
-        
-            ## Your Value Proposition
 
             Emphasize how the app will benefit users. Don't emphasize the underlying technology.
 
@@ -41,4 +40,6 @@ column2 = dbc.Col(
     ]
 )
 
-layout = dbc.Row([column1, column2])
+layout = [
+    dbc.Row([column0]),
+    dbc.Row([column1, column2])]
